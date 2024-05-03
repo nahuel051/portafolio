@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nahue Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="imagenes/cafe.ico">
+</head>
+<body>
+    <div class="index" id="index">
+        <div class="header">
+            <img src="imagenes/cafe.png" alt="logo">
+            <button id="abrir" class="abrir">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        <div class="navegador" id="navegador">
+            <button id="cerrar" class="cerrar">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <ul class="nav-ul">
+                <li class="cerrar-link"><a href="index.html#index">Inicio</a></li>
+                <li class="cerrar-link"><a href="index.html#habilidades">Habilidades</a></li>
+                <li class="cerrar-link"><a href="index.html#proyectos">Proyectos</a></li>
+                <li class="cerrar-link"><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+        </div> <!-- Fin de navegador -->
+    </div> <!-- Fin de header -->
+    <div class="contenido-index">
+        <div class="left-index">
+            <h3>Hola mi nombre es</h3>
+            <h1>Nahuel <span>Ramirez</span></h1>
+            <h2 id="typewriter"></h2>
+            <div class="boton-cv">
+                <a href="cv/Nahuel Ramirez-DS.pdf" download="CV.pdf" target="_blank">Descargar CV</a>
+            </div>
+        </div>
+        <div class="right-index">
+            <img src="imagenes/pngwing.com.png" alt="imagen-contenedor">
+        </div>
+    </div>
+    </div> <!-- Fin de index -->
+    <div class="habilidades" id="habilidades">
+        <h1>Tecnologias que manejo</h1>
+        <div class="slider-contenedor">
+            <div class="slider">
+                <img src="imagenes/html-5.png" alt="Imagen 1" class="tooltip-trigger" title="HTML">
+                <img src="imagenes/css-3.png" alt="Imagen 2" class="tooltip-trigger" title="CSS">
+                <img src="imagenes/js.png" alt="Imagen 3" class="tooltip-trigger" title="JavaScript">
+                <img src="imagenes/php.png" alt="Imagen 4" class="tooltip-trigger" title="PHP">
+                <img src="imagenes/laravel.png" alt="Imagen 5" class="tooltip-trigger" title="Laravel">
+                <img src="imagenes/react.png" alt="Imagen 6" class="tooltip-trigger" title="React">
+                <img src="imagenes/git.png" alt="Imagen 7" class="tooltip-trigger" title="Git">
+                <img src="imagenes/boostrap.png" alt="Imagen 8" class="tooltip-trigger" title="Boostrap">
+                <img src="imagenes/mysql.png" alt="Imagen 9" class="tooltip-trigger" title="Mysql">
+            </div>
+            <div class="points">
+                <span class="point active" onclick="goToPoint(0)"></span>
+                <span class="point" onclick="goToPoint(1)"></span>
+                <span class="point" onclick="goToPoint(2)"></span>
+                <span class="point" onclick="goToPoint(3)"></span>
+                <span class="point" onclick="goToPoint(4)"></span>
+                <span class="point" onclick="goToPoint(5)"></span>
+                <span class="point" onclick="goToPoint(6)"></span>
+                <span class="point" onclick="goToPoint(7)"></span>
+                <span class="point" onclick="goToPoint(8)"></span>
+              </div>
+        </div>
+    </div> <!--Fin de habilidades-->
+    <div class="proyectos" id="proyectos">
+        <h1>Proyectos que he realizado</h1>
+        <div class="contenedor-proyectos">
+            <div class="content-gestor">
+                <img src="imagenes/gestor.png" alt="imagen gestor">
+                <div class="text-proyectos">
+                    <span>Sistema de gestión de ventas</span>
+                    <a href="https://github.com/nahuel051/gestor" target="_blank"><i class="fa-brands fa-github"></i>Repositorio</a>
+                </div>
+            </div> 
+    
+            <div class="content-gestor">
+                <img src="imagenes/agenda.png" alt="imagen gestor">
+                <div class="text-proyectos">
+                    <span>Agenda</span>
+                    <a href="https://github.com/nahuel051/agendapage" target="_blank"><i class="fa-brands fa-github"></i>Repositorio</a>
+                    <a href="https://nahuel051.github.io/agendapage/" target="_blank"><i class="fa-solid fa-globe"></i>Link</a>
+                </div>
+            </div>
+
+            <div class="content-gestor">
+                <img src="imagenes/messi-web.png" alt="imagen gestor">
+                <div class="text-proyectos">
+                    <span>Pagina personalizada de Messi</span>
+                    <a href="https://github.com/nahuel051/proyecto-messi" target="_blank"><i class="fa-brands fa-github"></i>Repositorio</a>
+                    <a href="https://leomessiwebsite.000webhostapp.com/public/index.php" target="_blank"><i class="fa-solid fa-globe"></i>Link</a>
+
+                </div>
+            </div>
+        </div> <!--Fin de contenedor-proyectos-->
+    </div>    <!--Fin de proyectos-->
+    <div class="contacto" id="contacto">
+        <div class="contenedor-contacto">
+            <div class="redes-contacto">
+           <a href="https://www.linkedin.com/in/nahuel-isaramirez/" target="_blank"><i class="fa-brands fa-linkedin"></i>Linkedin</a> 
+           <a href="https://github.com/nahuel051" target="_blank"><i class="fa-brands fa-square-github"></i>Github</a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=isaias.nahuelramirez@gmail.com" target="_blank"><i class="fa-solid fa-square-envelope"></i>Gmail</a>
+            <a href="https://www.instagram.com/nahuel.ramirez9/" target="_blank"><i class="fa-brands fa-square-instagram"></i>Instragram</a>
+            </div>
+            <div class="ubicacion-contacto">
+               <span>📍 Argentina, Santa Fe (Capital)</span> 
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
