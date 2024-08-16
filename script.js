@@ -23,7 +23,7 @@ const phrases = [
     "Técnico en Informática"
 ];
 
-const delay = 150; // Tiempo de espera entre caracteres en milisegundos
+const delay = 10; // Tiempo de espera entre caracteres en milisegundos
 const pause = 2000; // Tiempo de pausa antes de cambiar la frase en milisegundos
 
 let index = 0; // Índice de la frase actual

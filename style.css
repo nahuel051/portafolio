@@ -182,6 +182,56 @@ html {
 .left-index span{
     color: #FF9017;
 }
+.left-index p{
+    color: #8d99ae;
+}
+@media screen and (max-width: 1200px){
+    .contenido-index h2{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 730px){
+    .left-index{
+        width: 80vw;
+        height: 60vh;
+    }
+    .contenido-index h1,
+    .contenido-index span{
+        font-size: 30px;
+    }
+
+    .contenido-index h2{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .left-index{
+        height: 30vh;
+    }
+    .contenido-index h1,
+    .contenido-index span{
+        font-size: 20px;
+    }
+
+    .contenido-index h2{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .left-index{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .left-index{
+        margin-bottom: 70px;
+    }
+}
+
 
 @media screen and (max-width: 1300px){
     .contenido-index{
@@ -216,11 +266,11 @@ html {
     }
 }
 
-@media screen and (max-width: 386px){
+/* @media screen and (max-width: 386px){
     .right-index img{
         width: 320px;
     }
-}
+} */
 
 @media screen and (max-width: 310px){
     .contenido-index h3{
