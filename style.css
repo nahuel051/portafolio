@@ -417,6 +417,7 @@ border-radius: 5px;
 .contenedor-proyectos{
     margin-top: 80px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -478,6 +479,7 @@ align-items: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 100px;
 }
 
 .contenedor-contacto{
